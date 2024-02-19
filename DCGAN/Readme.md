@@ -16,7 +16,7 @@
 - 이때 $G$의 목적은 $p_{data}$에서 얻을 수 있는 학습 데이터들의 분포를 추정하며, 모사한$p_g$의 분포를 이용해 가짜 데이터들을 생성
 - $D(G(z))$는 $G$가 출력한 결과물이 실제 이미지일 0~1사이의 상수의 확률값
 - $D$가 이미지의 참/거짓을 정확히 판별할 확률인 $logD(x)$에서 생성한 이미지를 $D$가 가짜로 판별할 확률인 $(log(1-D(G(z))))$를 최소화 시키려는 점에서, $D$와 $G$는 최대최소(minmax)게임을 하는 것과 같음
-- 손실함수 : $'\min\limits_{G}\max\limits_{D}V(D,G) = \Epsilon_{x\~p_{data}(x)}[logD(x)] + \Epsilon_{z\~p_z(z)}[log(1-D(G(z)))]'$
+- 손실함수 : $'\min\limits_{G}\max\limits_{D}V(D,G) = \Epsilon_{x~p_{data}(x)}[logD(x)] + \Epsilon_{z~p_z(z)}[log(1-D(G(z)))]'$
 - 이론적으로는, 이 최대최소게임은 $p_g = p_{data}$이고, 구분자에 입력된 데이터가 1/2의 무작위 확률로 참/거직이 판별될때 해답에 이름
 
 ### What is DCGAN
